@@ -1,6 +1,5 @@
 "use server"
 
-import { User } from "@prisma/client"
 import prisma, { postProp } from "../db"
 import { revalidatePath } from "next/cache"
 import { Post } from "@/app/_components/card"
