@@ -19,7 +19,7 @@ Welcome to <span className=" font-extrabold dsc">Innovate</span>, your ultimate 
 </h2>
 </div>
 </div>
-{post.map((itm) => (
+{post.map((itm :Post | any) => (
   <div className=" flex flex-wrap  flex-row gap-2">
  <Card post ={itm as Post} isbotton={true}/>
   </div>
