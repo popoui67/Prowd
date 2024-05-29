@@ -1,4 +1,4 @@
-import { Post, PrismaClient, Role } from "@prisma/client";
+import {  PrismaClient } from "@prisma/client";
 import {
   generateUploadButton,
   generateUploadDropzone,
