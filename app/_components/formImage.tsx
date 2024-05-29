@@ -58,6 +58,7 @@ export default ImageUploadForm;
   */
 
 export const UploadThing =()=>{
+  const [image , setImage ] =useState("")
   return (
     <>
     <UploadButton
@@ -65,6 +66,7 @@ export const UploadThing =()=>{
           onClientUploadComplete={(res) => {
             // Do something with the response
             console.log("Files: ", res);
+            setImage(res[0].url)
             alert("Upload Completed");
           }}
           onUploadError={(error: Error) => {
@@ -76,8 +78,6 @@ export const UploadThing =()=>{
     
     </>
   )
-
-
 }
 
 
