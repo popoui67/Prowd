@@ -4,8 +4,6 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { auth, currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
-import { GetUser } from "@/lib/action/action.user";
-import { User } from "@prisma/client";
 const inter = Inter({ subsets: ["latin"] });
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
