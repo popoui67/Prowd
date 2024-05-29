@@ -5,7 +5,7 @@ import { revalidatePath } from "next/cache"
 import { Post } from "@/app/_components/card"
 import { auth } from "@clerk/nextjs/server"
 import { redirect } from "next/navigation"
-
+import {User} from "../db"
 export async function CreatePosts(data :postProp ) {
     const published =true 
     console.log(data)
