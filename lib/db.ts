@@ -1,4 +1,4 @@
-import {  Post ,PrismaClient,Role } from "@prisma/client";
+import {  PrismaClient } from "@prisma/client";
 import {
   generateUploadButton,
   generateUploadDropzone,
@@ -26,8 +26,8 @@ export interface User {
   name :string
   emailAddress? :string | any
   createdAt? : Date
-role? : Role[] | any
-Post? : Post[] | any
+role? :   any
+Post? :  any
 imageUrl? : string 
 username :string
  }
