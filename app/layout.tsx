@@ -6,8 +6,7 @@ import { currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 const inter = Inter({ subsets: ["latin"] });
 
- 
-import { ourFileRouter } from "../app/(auth)/api/uploadthing/core";
+
  
 
 export const metadata: Metadata = {
