@@ -59,7 +59,7 @@ export async function   GetUser(user :User  ){
     return Post 
   }
  
-  export const  UpdatePost =async(id :string , data:Post | any)=>{
+  export const  UpdatePost =async(id :string , data:postProp | any)=>{
     const Post = await prisma.post.findUnique({
       where : {
         id :id
